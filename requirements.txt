@@ -1,0 +1,6 @@
+tqdm
+jsonlines
+prettytable
+torch==1.7.0
+faiss-cpu==1.6.1
+transformers==4.7.0
