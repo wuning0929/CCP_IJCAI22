@@ -4,11 +4,11 @@
 bash download_data.sh
 ```
 
-### Download model
+
+### Download CCP pre-trained model from google drive
 
 https://drive.google.com/drive/folders/1jVyTfXx4qFusggaZlSxYGe96WrRUKqxU?usp=sharing
 
-### Download CCP pre-trained model from google drive
 
 ```
 data
