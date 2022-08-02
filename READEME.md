@@ -4,6 +4,10 @@
 bash download_data.sh
 ```
 
+### Download model
+
+https://drive.google.com/drive/folders/1jVyTfXx4qFusggaZlSxYGe96WrRUKqxU?usp=sharing
+
 ### Download CCP pre-trained model from google drive
 
 ```
