@@ -4,7 +4,7 @@ mkdir data & cd data
 
 # NQ dataset
 
-mkdir nq & cd nq
+mkdir nq & cd $_
 
 wget https://dl.fbaipublicfiles.com/dpr/data/retriever/biencoder-nq-dev.json.gz
 wget https://dl.fbaipublicfiles.com/dpr/data/retriever/biencoder-nq-train.json.gz
@@ -16,7 +16,7 @@ cd ..
 
 # Mr.TyDi dataset
 
-mkdir mrtydi & cd mrtydi
+mkdir mrtydi & cd $_
 
 wget https://git.uwaterloo.ca/jimmylin/mr.tydi/-/raw/master/data/mrtydi-v1.1-arabic.tar.gz
 wget https://git.uwaterloo.ca/jimmylin/mr.tydi/-/raw/master/data/mrtydi-v1.1-bengali.tar.gz
@@ -69,3 +69,17 @@ gunzip mrtydi-v1.1-te/collection/docs.jsonl.gz
 gunzip mrtydi-v1.1-th/collection/docs.jsonl.gz
 
 cd ..
+
+## XOR-QA dataset
+
+mkdir -p xorqa && cd $_
+
+wget https://nlp.cs.washington.edu/xorqa/XORQA_site/data/xor_train_retrieve_eng_span.jsonl
+wget https://nlp.cs.washington.edu/xorqa/XORQA_site/data/xor_dev_retrieve_eng_span_v1_1.jsonl
+wget https://nlp.cs.washington.edu/xorqa/XORQA_site/data/xor_test_retrieve_eng_span_q_only_v1_1.jsonl
+wget https://nlp.cs.washington.edu/xorqa/XORQA_site/data/models/enwiki_20190201_w100.tsv
+
+mv xor_train_retrieve_eng_span.jsonl train.jsonl
+mv xor_dev_retrieve_eng_span_v1_1.jsonl dev.jsonl
+mv xor_test_retrieve_eng_span_q_only_v1_1.jsonl test.jsonl
+mv enwiki_20190201_w100.tsv en_wiki.tsv
