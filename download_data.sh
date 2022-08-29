@@ -4,7 +4,7 @@ mkdir data & cd data
 
 # NQ dataset
 
-mkdir nq & cd $_
+mkdir nq & cd nq
 
 wget https://dl.fbaipublicfiles.com/dpr/data/retriever/biencoder-nq-dev.json.gz
 wget https://dl.fbaipublicfiles.com/dpr/data/retriever/biencoder-nq-train.json.gz
@@ -16,7 +16,7 @@ cd ..
 
 # Mr.TyDi dataset
 
-mkdir mrtydi & cd $_
+mkdir mrtydi & cd mrtydi
 
 wget https://git.uwaterloo.ca/jimmylin/mr.tydi/-/raw/master/data/mrtydi-v1.1-arabic.tar.gz
 wget https://git.uwaterloo.ca/jimmylin/mr.tydi/-/raw/master/data/mrtydi-v1.1-bengali.tar.gz
@@ -72,7 +72,7 @@ cd ..
 
 ## XOR-QA dataset
 
-mkdir -p xorqa && cd $_
+mkdir -p xorqa && cd xorqa
 
 wget https://nlp.cs.washington.edu/xorqa/XORQA_site/data/xor_train_retrieve_eng_span.jsonl
 wget https://nlp.cs.washington.edu/xorqa/XORQA_site/data/xor_dev_retrieve_eng_span_v1_1.jsonl
